@@ -78,25 +78,32 @@ $(function(){
 	// 반응형 시
 	$(window).resize(function(){
 		windowW = window.innerWidth;
-		initSwiper(windowW);
+		if($(".visualSwiper").length){
+			initSwiper(windowW);
+		}
+		
 
-		if(windowW<1200){
-			// $("body").removeClass("scroll_fixed");
-			// black_bg_leave();
-			// $(".sitemap_wrap").stop().fadeOut(300);
-			
-			
+		if(windowW<769){
+			mobileBox();
 		}
 		else{
-			
+			pcBox();
+
 			if(mGnbReady){
 				mGnbClose();
 			}
-			//$(".gnb_box").stop().show();
-			
 		}
 	});
 	$(window).trigger("resize");
+
+	function mobileBox(){
+		let $imgT = $(".life_wrap .row.resize .col .img_txt");
+		$(".life_wrap .row.resize .col .txt_box").before($imgT);
+	}
+	function pcBox(){
+		let $txtB = $(".life_wrap .row.resize .col .img_txt");
+		$(".life_wrap .row.resize .col .txt_box").after($txtB);
+	}
 
 	
 
@@ -104,5 +111,12 @@ $(function(){
 		slidesPerView: "auto",
 		spaceBetween: 18
 	});
+
+	// top 버튼
+	$(".quick_box .quick_list .top").click(function(){
+		$("html,body").animate({scrollTop:0}, 300);
+		return false;
+	});
+	
 
 });
