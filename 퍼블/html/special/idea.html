@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<!-- title -->
+	<meta charset="UTF-8">
+    <meta name="Author" content="이름">
+    <meta name="Keywords" content="키워드">
+    <meta name="Description" content="설명">
+    <meta property="og:title" content="이름">
+    <meta property="og:description" content="설명">
+    <meta property="og:image" content="../../resources/images/common/head_logo.png">
+    <meta property="og:url" content="url">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="Expires" content="-1"> 
+	<meta http-equiv="Pragma" content="no-cache"> 
+	<meta http-equiv="Cache-Control" content="No-Cache"> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            // For google fonts
+            google: {
+                families: ['Open Sans']
+            },
+            // For early access or custom font
+            custom: {
+                families: ['Noto Sans KR', 'NanumSquare'],
+                urls: ['../../resources/css/NotoSans.css' , '../../resources/css/NanumSquare.css']
+            }
+        });
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="../../resources/images/common/favicon.ico" >
+    <title>사이트명</title>
+	<!-- // title -->
+
+	<!-- common_css -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/common.css">
+	<!-- // common_css -->
+	
+	<!-- common_js -->
+	<script type="text/javascript" src="../../resources/js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../resources/js/jquery-migrate-1.4.1.min.js"></script>
+	<script type="text/javascript" src="../../resources/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../resources/js/common.js"></script>
+
+	<!--[if lt IE 10]>
+		<script src="../../resources/js/placeholders.min.js" type="text/javascript"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="../../resources/js/html5shiv.js" type="text/javascript"></script>
+		<script src="../../resources/js/respond.min.js" type="text/javascript"></script>
+		<script src="../../resources/js/selectivizr-min.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		/* 브라우저 체크 (IE) */
+		var ua = navigator.userAgent.toLowerCase();
+		if( ua.indexOf( 'msie' ) != -1 || ua.indexOf( 'trident' ) != -1 ) {
+			var version = 11;
+			ua = /msie ([0-9]{1,}[\.0-9]{0,})/.exec( ua );
+			if( ua )
+			{
+				version = parseInt( ua[ 1 ] );
+			}
+			var classNames = '';
+			classNames += ' is-ie';
+			classNames += ' ie' + version;
+			for( var i = version + 1; i <= 11; i++ ) {
+				classNames +=  ' lt-ie' + i;
+			}
+			document.getElementsByTagName( 'html' )[ 0 ].className += classNames;
+		}
+	</script>
+	<!-- // common_js -->
+
+	<!-- 추가 css -->
+	<link rel="stylesheet" href="../../resources/css/sub.css" type="text/css">
+	<!-- // 추가 css -->
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<!-- skip_navi -->
+			<dl class="skip_navi">
+				<dt class="hide"><strong>바로가기 메뉴</strong></dt>
+				<dd><a href="#real_contents">본문 바로가기</a></dd>    
+				<dd><a href="#gnb">주메뉴 바로가기</a></dd>
+			</dl>
+			<!-- // skip_navi -->
+
+			<div class="container clearfix">
+				<a href="#" class="logo"><span class="hide">TWO CHAIRS</span></a>
+				<div class="gnb_box">
+					<span class="mlogo m-view"><span class="hide">TWO CHAIRS</span></span>
+					<ul class="gnb clearfix">
+						<li class="active">
+							<a href="#">Special Theme</a>
+							<ul class="sub_gnb">
+								<li><a href="#">Expert</a></li>
+								<li><a href="#">Insight</a></li>
+								<li><a href="#">Idea</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Life &</a>
+							<ul class="sub_gnb">
+								<li><a href="#">Travel</a></li>
+								<li><a href="#">Archtecture</a></li>
+								<li><a href="#">Trend Issue</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Senior Plus</a>
+							<ul class="sub_gnb">
+								<li><a href="#">Stay</a></li>
+								<li><a href="#">Liquor</a></li>
+								<li><a href="#">Health</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Wealth &</a>
+							<ul class="sub_gnb">
+								<li><a href="#">Investment</a></li>
+								<li><a href="#">Tax Story</a></li>
+								<li><a href="#">Real Estate</a></li>
+								<li><a href="#">Advisor</a></li>
+							</ul>
+						</li>
+					</ul>
+					<button type="button" class="mgnb_close"><span class="hide">닫기</span></button>
+				</div>
+			</div>
+
+			<button type="button" class="mgnb_open"><span class="hide">모바일 gnb</span></button>
+			<button type="button" class="m_back"><</button>
+			<span class="vol m-view">2022 2월호</span>
+		</div>
+		<!-- // header -->
+
+		<!-- contents -->
+		<div id="real_contents" class="contents">
+			<!-- sub_con -->
+			<div class="sub_con">
+				<!-- idea_wrap -->
+				<div class="idea_wrap">
+					<div class="container">
+						<div class="sub_top">
+							<div class="inner">
+								<p class="sort">[SPECIAL THEME]<br class="xm-view"> Idea</p>
+								<p class="title">미래를 보는 숫자</p>
+								<p class="txt">숫자에 숨어 있는 의미를 탐색하는 것은
+									<br>인간의 내밀한 욕망과 상상력을 탐구하는 것이고,
+									<br>인간에 대한 이해를 확장하는 것이다.
+									<br>이 숫자들이 있었기에 미래에 대한 변화의 움직임이 시작될 수 있었다.
+									<br>역사 속 위대한 발견으로 꼽히는 숫자를 소개한다.</p>
+								<p class="writer">Writer. 강은진</p>
+							</div>
+						</div>
+						<div class="txt_box">
+							<div class="sub_each">
+								<p class="title1" style="font-family: 'Roboto'; letter-spacing: -1.25px;">1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144•••</p>
+								<p class="title2">피보나치수열</p>
+								<p class="txt">앞 두 숫자의 합이 다음 숫자가 되도록 반복해서 더해나가는 것을 피보나치수열이라고 하는데, 이는 자연의 섭리를 반영한다.예를 들어, 나뭇가지는 몸통(1개)에서 출발해 잔가지를 치며 2개가 되었다가 3개, 5개, 8개, 13개로 뻗어나가는데,이는피보나치수열과 일치한다.</p>
+							</div>
+							<div class="sub_each">
+								<div class="left">
+									<p class="title1">magic square</p>
+									<p class="title2">마방진</p>
+									<p class="txt">마방진이란 1부터 9까지의 숫자를 적되,가로・세로・대각선에 있는 수들의 합이 모두 같도록 만든 숫자의 배열이다.
+										<br><span class="pc-view">한나라 우왕 때 강의 범람을 막기 위해 제방을 쌓던 중 등 껍데기에 마방진을 새긴거북이가 나타나 이를 공사 방법에 적용하면서 유래되었다고 한다. 이후 마방진은 명당을 정하거나 길흉화복을 점치는도구로 사용되었다</span></p>
+								</div>
+								<img src="../../resources/images/sub/special/idea_img2.jpg" alt="마방진">
+							</div>
+							<div class="sub_each">
+								<p class="title1"><span class="fz1">∞</span></p>
+								<p class="title2">무한대</p>
+								<p class="txt">무한을 나타내는 상징이다. 숫자 8을 90도회전한 것처럼 보인다. 고대 로마숫자의1000인 (CI )을 기초로 만든 것으로 알려져 있다.
+									수학자 존 월리스는 1655년 저서 <DeSectionibusConicis>에서 무한대를 설명할 때 기호를 사용했다. 흔히 ∞ 기호를 뫼비우스의 띠에 비유한다.</p>
+							</div>
+							<div class="sub_each">
+								<p class="title1">1:1.618</p>
+								<p class="title2">황금비</p>
+								<p class="txt">조각상 중에서도 비너스를 가장 아름답다고 여기는데, 그 이유는 황금비를 잘 따랐기 때문이다.
+									황금비란 옛날부터 사람 눈에 가장 아름답고 편하게 보이는 길이의 비율이다. 사람들이 가장 안정감 있고 아름답다고 느끼는 비율은 1 : 1.618이다. 고대 그리스 시대부터 황금비는 '신의 비례'라 하여 신성하게 여겼다.
+									황금비를 가장 처음 발견한 사람은 기원전 4세기플라톤의 제자인 에우독소스이고, 레오나르도 다빈치가 '황금비'라고 이름을 붙였다.</p>
+							</div>
+							<div class="sub_each">
+								<p class="title1"><span class="fz2">π</span> 3.14</p>
+								<p class="title2">원주율</p>
+								<p class="txt">고대부터 인류는 원지름에 대한 원둘레의비율이 항상 같다는 것, 그리고 그 비율이3배 조금 넘는다는 사실을 알고 있었다.π의 추정치가 기록에 처음 출현한 것은 기원전 1900년경이다.</p>
+							</div>
+							<div class="sub_each">
+								<p class="title1">1 ‘One is Not Amused’</p>
+								<p class="title2">자연수</p>
+								<p class="txt">자연수의 시작인 1은 말로 그 뜻을 모두 표현하기 어려운 숫자다. 모든 수의 기본인 숫자 1은 가장 크고 완전한 동시에 가장 작고부족하다. 작은 숫자이지만 최고, 승자, 리더, 총아 등의 의미로 사용하기도 한다. ‘여왕은 웃지 않는다’를 영문으로 하면 ‘One isNot Amused’이다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // idea_wrap -->
+			</div>
+			<!-- // sub_con -->
+		</div>
+		<!-- // contents -->
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="quick_box">
+					<ul class="quick_list">
+						<li><a href="#" class="facebook"></a></li>
+						<li><a href="#" class="twitter"></a></li>
+						<li><a href="#" class="share"></a></li>
+						<li><a href="#" class="home"></a></li>
+						<li><a href="#" class="top"></a></li>
+					</ul>
+				</div>
+				<div class="link_box">
+					<ul class="sns_list">
+						<li><a href="#" target="_blank"><img src="../../resources/images/common/ico_sns1.png" alt="네이버블로그"></a></li>
+						<li><a href="#" target="_blank"><img src="../../resources/images/common/ico_sns2.png" alt="네이버"></a></li>
+						<li><a href="#" target="_blank"><img src="../../resources/images/common/ico_sns3.png" alt="페이스북"></a></li>
+						<li><a href="#" target="_blank"><img src="../../resources/images/common/ico_sns4.png" alt="유튜브"></a></li>
+						<li><a href="#" target="_blank"><img src="../../resources/images/common/ico_sns5.png" alt="인스타그램"></a></li>
+						<li><a href="#"><img src="../../resources/images/common/ico_sns6.png" alt="메일"></a></li>
+					</ul>
+					<a href="#" class="subscribe_btn"><img src="../../resources/images/common/subscribe_btn.png" alt="SUBSCRIBE"></a>
+				</div>
+				<p class="copyright">copyrights (c) 2021 TWO CHAIRS  all rights reserved.</p>
+			</div>
+		</div>
+		<!-- // footer -->
+	</div>
+	<!-- // wrapper -->
+</body>
+</html>
+
+
